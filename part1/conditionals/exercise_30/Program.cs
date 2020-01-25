@@ -14,27 +14,27 @@ namespace exercise_30
       {
         Console.WriteLine("Impossible");
       }
-      else if (value > 0 & value <= 49)
+      else if (value <= 49)
       {
         Console.WriteLine("Fail");
       }
-      else if (value > 50 & value <= 59)
+      else if (value <= 59)
       {
         Console.WriteLine("Grade: 1");
       }
-      else if (value > 60 & value <= 69)
+      else if (value <= 69)
       {
         Console.WriteLine("Grade: 2");
       }
-      else if (value > 70 & value <= 79)
+      else if (value <= 79)
       {
         Console.WriteLine("Grade: 3");
       }
-      else if (value > 80 & value <= 89)
+      else if (value <= 89)
       {
         Console.WriteLine("Grade: 4");
       }
-      else if (value > 90 & value <= 100)
+      else if (value <= 100)
       {
         Console.WriteLine("Grade: 5");
       }
