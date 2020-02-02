@@ -17,12 +17,12 @@ namespace exercise_54
     {
       while (beginning <= end)
       {
+       
         if (beginning % 3 == 0)
         {
           Console.WriteLine(beginning);
-          
         }
-        beginning = beginning + 1;
+       beginning = beginning + 1; 
 
       }
     }
