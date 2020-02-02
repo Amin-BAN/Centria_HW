@@ -9,6 +9,17 @@ namespace exercise_45
 
       // Write your code here:
 
+      string userinput = Console.ReadLine();
+      int input = Convert.ToInt32(userinput);
+
+      int number = 0;
+      
+      while(number <= input)
+      {
+        Console.WriteLine(number);
+        number = number + 1;
+      }
+
     }
   }
 }
