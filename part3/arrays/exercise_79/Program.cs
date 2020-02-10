@@ -23,10 +23,8 @@ namespace exercise_79
 
       // Implement the search functionality here
 
-        int i = 0;
-        if ( i < array.Length )
+        for (int i = 0; i < array.Length; i++)
         { 
-          i++ ;
         
         if ( searching == array[i])
         {
@@ -36,7 +34,9 @@ namespace exercise_79
         {
           Console.WriteLine( searching + " was not found." );
         }
+
         }
+        
 
     }
 
