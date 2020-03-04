@@ -19,7 +19,7 @@ namespace exercise_98
         public void PrintProduct()
         {
             Console.WriteLine( name + ":" + " price " + price + ": " + quantity  + " pcs" );
-
+        
         }
     }
 }
