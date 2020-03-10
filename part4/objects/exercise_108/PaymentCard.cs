@@ -1,4 +1,4 @@
-namespace exercise_106
+namespace exercise_108
 {
   public class PaymentCard
   {
