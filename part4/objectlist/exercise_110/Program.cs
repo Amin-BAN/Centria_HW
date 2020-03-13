@@ -17,7 +17,7 @@ namespace exercise_110
         Console.Write("Name: ");
         string name = Console.ReadLine();
         
-        if ( name == "")
+        if ( name == "" )
         {
           break;
         }
