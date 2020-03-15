@@ -10,14 +10,14 @@ namespace exercise_113
       // IMPLEMENT YOUR CODE IN HERE!
       // Remember also to create the file Book.cs and class in it!
 
-      List<Book>list = new List<Book>();
+      List<Book> list = new List<Book>();
 
       while(true)
       {
         Console.Write("Name: ");
-        string title = Console.ReadLine();
+        string name = Console.ReadLine();
 
-        if ( title == "" )
+        if ( name == "" )
         {
           break;
         }
@@ -28,7 +28,7 @@ namespace exercise_113
         Console.Write("Publication year: ");
         int year = Convert.ToInt32(Console.ReadLine());
 
-        list.Add(new Book(title, pages, year));
+        list.Add(new Book(name, pages, year));
       }
       Console.WriteLine();
 
@@ -36,20 +36,26 @@ namespace exercise_113
       string infoPrint = Console.ReadLine();
 
       foreach (Book item in list)
-      {
+      { 
+  
         if (infoPrint == "title")
         { 
-          Console.WriteLine(item.title);
+          
+          Console.WriteLine(item.name);
         }
         else if (infoPrint == "everything")
         {
+          
           Console.WriteLine(item);
         }
         else
         {
           break;
         }
-      }
+       
+      } 
+        
+      
 
     }
   }
