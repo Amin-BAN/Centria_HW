@@ -8,7 +8,7 @@ namespace exercise_113
         public int pages { get; set; }
         public int year { get; set; }
 
-        public Book ( string title, int pages, int year )
+        public Book ( string name, int pages, int year )
         {
             this.name = name;
             this.pages = pages;
