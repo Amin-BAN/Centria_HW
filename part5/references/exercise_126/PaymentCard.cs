@@ -20,6 +20,12 @@ namespace exercise_126
       // the balance is at least the amount parameter.
       // returns true if successful and false otherwise
 
+      if (this.balance >= amount)
+      {
+        this.balance = this.balance - amount;
+        return true;
+      }
+
       return false;
     }
   }
