@@ -8,6 +8,10 @@ namespace exercise_124
     {
       // Implement your program here!
 
+      Null first = null;
+      first.Increase(1);
+      Console.WriteLine(first); 
+
       
     }
   }
