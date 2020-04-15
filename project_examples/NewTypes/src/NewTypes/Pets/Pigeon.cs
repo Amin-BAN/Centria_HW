@@ -1,6 +1,6 @@
 using System;
 
-namespace pets
+namespace Pets
 {
     public class Pigeon
     {
