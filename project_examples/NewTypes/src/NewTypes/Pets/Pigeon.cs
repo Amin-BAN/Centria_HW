@@ -2,12 +2,12 @@ using System;
 
 namespace pets
 {
-    public class Man
+    public class Pigeon
     {
         public string TalkToOwner()
             {
-                return "Hello";
+                return "Coo";
             }
-        )
+        
     }
 }
