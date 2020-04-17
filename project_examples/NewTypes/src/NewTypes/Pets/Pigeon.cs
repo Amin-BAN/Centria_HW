@@ -6,7 +6,7 @@ namespace Pets
     {
         public string TalkToOwner()
             {
-                return "Coo";
+                return "Coo-roo";
             }
         
     }
