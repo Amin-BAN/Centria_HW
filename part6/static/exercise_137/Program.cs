@@ -8,7 +8,7 @@ namespace exercise_136
     public static void Main(string[] args)
     {
       // DO NOT TOUCH THE CODE IN HERE
-      Person ada = new Person("Ada Lovelace");
+      Person ada = new Person("Adw Lovelace");
       Person jack = new Person("Jack The Ripper");
       Person mike = new Person("Mike The Incredible Magic Mouse");
 
