@@ -1,4 +1,5 @@
 ###Exercise 1###
+
 ####Italics and Bold####
 1)  Writing in Markdown is _not_ that hard!
 2)  I **will** complete these lessons!
