@@ -1,4 +1,4 @@
-###Exercise 1###
+<h3>Exercise 1<h3>
 
 ####Italics and Bold####
 1)  Writing in Markdown is _not_ that hard!
