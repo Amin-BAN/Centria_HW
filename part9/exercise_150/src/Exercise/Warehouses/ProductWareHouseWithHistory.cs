@@ -1,25 +1,19 @@
 namespace Exercise
 {
-  public class ProductWarehouseWithHistory : ProductWarehouse
+  public class ProductWarehouse : Warehouse
   {
-    public ProductWarehouseWithHistory(string productName, int capacity, int initialBalance) : base(productName, capacity)
-    {
 
+    public string productName;
+
+    public ProductWarehouse(string productName, int capacity) : base(capacity)
+    {
+       this.productName = productName;
+       this.capacity = capacity;
     }
 
-    public string History()
+    public override string ToString()
     {
-      return "";
-    }
-
-    new public void AddToWarehouse(int amount)
-    {
-
-    }
-
-    new public int TakeFromWarehouse(int amount)
-    {
-      return 0;
+      return this.productName + ": " + base.ToString();
     }
   }
 }
