@@ -1,52 +1,47 @@
 namespace Exercise
 {
-  using System.Collections.Generic;
-  using System;
+    using System;
+    using System.Collections.Generic;
 
-  public class LotteryRow
-  {
-    private List<int> numbers;
-
-    public LotteryRow()
+    public class LotteryRow
     {
-      this.RandomizeNumbers();
-    }
+        private List<int> numbers;
 
-    public List<int> Numbers()
-    {
-      return this.numbers;
-    }
-
-    public bool ContainsNumber(int number)
-    {
-      // Tests whether the number is already among the randomized numbers
-      if (this.numbers.Contains(number))
-      {
-        return true;
-      }
-      else
-      {
-        return false;
-      }
-    }
-
-    public void RandomizeNumbers()
-    {
-      // initialize the list for numbers
-      this.numbers = new List<int>();
-      // Implement the randomization of the numbers by using the method ContainsNumber() here
-      Random lotteryNumbers = new Random();
-
-      for (int i = 0; i < 7; i++)
-      {
-        int number = lotteryNumbers.Next(1, 41);
+        public LotteryRow()
         {
-          if (!this.ContainsNumber(number));
-          numbers.Add(number);
+            this.RandomizeNumbers();
         }
-      }
-      // sort the numbers
-      numbers.Sort();
+
+        public List<int> Numbers()
+        {
+            return this.numbers;
+        }
+        public bool ContainsNumber(int number)
+        {
+            // Tests whether the number is already among the randomized numbers
+            if (this.numbers.Contains(number))
+            {
+                return true;
+            }
+            return false;
+        }
+        public void RandomizeNumbers()
+        {
+            // initialize the list for numbers
+            this.numbers = new List<int>();
+            // Implement the randomization of the numbers by using the method ContainsNumber() here
+            Random lottery = new Random();
+            for (int i = 0; i < 7;)
+            {
+                int lotteryNumber = lottery.Next(1, 41);
+                if (!ContainsNumber(lotteryNumber))
+                {
+                    this.numbers.Add(lotteryNumber);
+                    i++;
+                }
+            }
+            this.numbers.Sort();
+        }
+
     }
-  }
 }
